@@ -1,0 +1,13 @@
+{
+  "watch": [
+    "index.js",
+    "balancer.js",
+    "env.json"
+  ],
+  "ext": "js,json,txt",
+  "ignore": [
+    "node_modules",
+    "*.test.js"
+  ],
+  "delay": "500"
+}

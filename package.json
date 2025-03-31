@@ -1,0 +1,19 @@
+{
+  "name": "nope-is-over-proxy-engine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "proxy-chain": "^2.5.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
