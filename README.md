@@ -94,35 +94,6 @@ Each proxy in the `env.json` should be in the format:
 }
 ```
 
-### Balancer Configuration
-
-The balancer module provides intelligent proxy selection based on domains:
-
-```javascript
-// Example balancer.js
-const config = require('./env.json');
-
-let currentIndex = 0;
-const proxies = config.proxies || [];
-
-function getNextProxy(hostname) {
-  if (proxies.length === 0) return null;
-  
-  // You can implement domain-specific logic here
-  // For example, use specific proxies for certain domains
-  
-  // Simple round-robin implementation
-  const proxy = proxies[currentIndex];
-  currentIndex = (currentIndex + 1) % proxies.length;
-  
-  return proxy;
-}
-
-module.exports = {
-  getNextProxy
-};
-```
-
 ## Usage
 
 ### Using as HTTP Proxy
